@@ -1,11 +1,10 @@
-import { Box, Flex, Heading, Link, Text, useColorModeValue } from "@chakra-ui/react";
-import { useSession } from "next-auth/client";
+import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import { ContactButton } from "../components/Home/ContactButton";
 import { GithubButton } from "../components/Home/GithubButton";
 import { Profile } from "../components/Home/profile";
+import Link from 'next/link'
 
 export default function HomeIndex(){
-    const [ session ] = useSession()
 
     const txtColor = useColorModeValue("gray.700", "gray.400")
     const linkColor = useColorModeValue("blue.800", "blue.300")
@@ -44,7 +43,9 @@ export default function HomeIndex(){
                 <Text fontSize="30" pos="relative" right="25px" color={txtColor}>i'm a front-end developer</Text>
                 <Box display="flex" mt="8">
                     <Text mr="2">To learn more about my work</Text>
-                    <Link href="/projects" color={linkColor}>click here</Link>
+                    <Box color={linkColor} _hover={{ filter: "brightness(0.8)", textDecoration: "underline" }}>
+                        <Link href="/projects">click here</Link>
+                    </Box>
                 </Box>
 
                 <ContactButton />
