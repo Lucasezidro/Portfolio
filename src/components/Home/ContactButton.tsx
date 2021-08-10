@@ -15,6 +15,7 @@ export function ContactButton() {
         <Button 
             pos="relative"
             top="100px"
+            left="200px"
             bg={ButtonColor}
             color="gray.50"
             transition="all 0.6s"

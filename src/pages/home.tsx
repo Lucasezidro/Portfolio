@@ -35,16 +35,16 @@ export default function HomeIndex(){
                 alt="Lucas Ezidro"
             />
 
-            <Heading pos="absolute" top="160px" left="210px">
+            <Heading pos="absolute" top="160px" left="410px">
                 👋 Hi My name is Lucas Ezidro!
             </Heading>
 
             <Box mt="220px">
-                <Text fontSize="30" pos="relative" right="25px" color={txtColor}>i'm a front-end developer</Text>
+                <Text fontSize="30" pos="relative" left="170px" color={txtColor}>i'm a front-end developer</Text>
                 <Box display="flex" mt="8">
-                    <Text mr="2">To learn more about my work</Text>
-                    <Box color={linkColor} _hover={{ filter: "brightness(0.8)", textDecoration: "underline" }}>
-                        <Link href="/projects">click here</Link>
+                    <Text ml="203px">To learn more about my work</Text>
+                    <Box color={linkColor} _hover={{ filter: "brightness(0.8)", textDecoration: "underline" }} ml="2">
+                        <Link href="/about">click here</Link>
                     </Box>
                 </Box>
 
